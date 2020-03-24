@@ -1,0 +1,51 @@
+{
+  "name": "gatsby-regulations",
+  "version": "1.0.0",
+  "description": "A user interface for displaying interactive regulations. A companion project to [wagtail-regulations](https://github.com/cfpb/wagtail-regulations).",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf .cache public _site",
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cfpb/gatsby-regulations.git"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Consumer Financial Protection Bureau",
+    "email": "tech@cfpb.gov",
+    "url": "https://cfpb.github.io/"
+  },
+  "license": "SEE LICENSE IN TERMS.md",
+  "bugs": {
+    "url": "https://github.com/cfpb/gatsby-regulations/issues"
+  },
+  "homepage": "https://github.com/cfpb/gatsby-regulations#readme",
+  "dependencies": {
+    "gatsby": "^2.19.12",
+    "gatsby-plugin-manifest": "^2.2.41",
+    "gatsby-plugin-offline": "^3.0.34",
+    "gatsby-plugin-react-helmet": "^3.1.22",
+    "gatsby-plugin-sass": "^2.1.28",
+    "gatsby-plugin-sharp": "^2.5.3",
+    "gatsby-source-filesystem": "^2.1.48",
+    "gatsby-transformer-remark": "^2.6.50",
+    "gatsby-transformer-sharp": "^2.4.2",
+    "netlify-cms-app": "^2.11.14",
+    "node-sass": "^4.13.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-helmet": "^5.2.1",
+    "uswds": "^2.4.0"
+  },
+  "devDependencies": {
+    "prettier": "^2.0.2",
+    "rimraf": "^3.0.2"
+  }
+}

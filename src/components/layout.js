@@ -1,16 +1,10 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
 
+import Banner from './banner';
 import Header from './header';
-import './layout.css';
+import Footer from './footer';
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -25,13 +19,14 @@ const Layout = ({ children }) => {
 
   return (
     <>
+      <a className="usa-skipnav" href="#main-content">
+        Skip to main content
+      </a>
+      <Banner />
+      <div className="usa-overlay" />
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div>
-        <main>{children}</main>
-        <footer>
-          <small>Footer content</small>
-        </footer>
-      </div>
+      <main id="main-content">{children}</main>
+      <Footer />
     </>
   );
 };

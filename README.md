@@ -13,14 +13,13 @@ A user interface for displaying interactive regulations. A companion project to 
 Clone the repo and run:
 
 ```
-npm install
+yarn
 ```
 
 ## Usage
 
 ```
-$ npm install
-$ npm run develop
+$ yarn develop
 ```
 
 ## Getting help

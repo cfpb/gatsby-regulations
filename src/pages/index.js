@@ -6,7 +6,11 @@ import SEO from '../components/seo';
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <p>Welcome to Gatsby Regulations.</p>
+    <section className="usa-section">
+      <div className="grid-container">
+        <p>Welcome to Gatsby Regulations.</p>
+      </div>
+    </section>
   </Layout>
 );
 
